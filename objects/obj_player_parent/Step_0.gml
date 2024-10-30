@@ -1,17 +1,32 @@
-/// @description Insert description here
-// You can write your code in this editor
-if keyboard_check(ord(key_movement_up)) {
-	y -= movement_speed
+if (!is_moving) {
+    if (keyboard_check(ord(key_movement_up)) && !place_meeting(x, y - tile_size, obj_wall_parent)) {
+        target_y = y - tile_size;
+        is_moving = true;
+    }
+    else if (keyboard_check(ord(key_movement_down)) && !place_meeting(x, y + tile_size, obj_wall_parent)) {
+        target_y = y + tile_size;
+        is_moving = true;
+    }
+    else if (keyboard_check(ord(key_movement_right)) && !place_meeting(x + tile_size, y, obj_wall_parent)) {
+        target_x = x + tile_size;
+        is_moving = true;
+    }
+    else if (keyboard_check(ord(key_movement_left)) && !place_meeting(x - tile_size, y, obj_wall_parent)) {
+        target_x = x - tile_size;
+        is_moving = true;
+    }
 }
 
-if keyboard_check(ord(key_movement_down)) {
-	y += movement_speed
-}
+// If moving, shift position towards the target tile step-by-step
+if (is_moving) {
+    // Move in steps, giving a deliberate "choppy" feel
+    if (x < target_x) x = min(x + move_speed, target_x);
+    if (x > target_x) x = max(x - move_speed, target_x);
+    if (y < target_y) y = min(y + move_speed, target_y);
+    if (y > target_y) y = max(y - move_speed, target_y);
 
-if keyboard_check(ord(key_movement_right)) {
-	x += movement_speed
-}
-
-if keyboard_check(ord(key_movement_left)) {
-	x -= movement_speed
+    // Stop moving when the target tile is reached
+    if (x == target_x && y == target_y) {
+        is_moving = false;
+    }
 }

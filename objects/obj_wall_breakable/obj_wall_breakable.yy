@@ -1,10 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_wall",
+  "%Name":"obj_wall_breakable",
   "eventList":[],
   "managed":true,
-  "name":"obj_wall",
-  "overriddenProperties":[],
+  "name":"obj_wall_breakable",
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_wall_parent","path":"objects/obj_wall_parent/obj_wall_parent.yy",},"propertyId":{"name":"is_breakable","path":"objects/obj_wall_parent/obj_wall_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"True",},
+  ],
   "parent":{
     "name":"Objects",
     "path":"folders/Objects.yy",
@@ -31,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":true,
   "spriteId":{
-    "name":"Sprite3",
-    "path":"sprites/Sprite3/Sprite3.yy",
+    "name":"Sprite4",
+    "path":"sprites/Sprite4/Sprite4.yy",
   },
   "spriteMaskId":null,
   "visible":true,
