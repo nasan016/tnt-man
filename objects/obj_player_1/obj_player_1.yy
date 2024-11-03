@@ -9,6 +9,8 @@
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_player_parent","path":"objects/obj_player_parent/obj_player_parent.yy",},"propertyId":{"name":"key_movement_down","path":"objects/obj_player_parent/obj_player_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"S",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_player_parent","path":"objects/obj_player_parent/obj_player_parent.yy",},"propertyId":{"name":"key_movement_left","path":"objects/obj_player_parent/obj_player_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"A",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_player_parent","path":"objects/obj_player_parent/obj_player_parent.yy",},"propertyId":{"name":"key_movement_right","path":"objects/obj_player_parent/obj_player_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"D",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_player_parent","path":"objects/obj_player_parent/obj_player_parent.yy",},"propertyId":{"name":"key_place_bomb","path":"objects/obj_player_parent/obj_player_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"E",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_player_parent","path":"objects/obj_player_parent/obj_player_parent.yy",},"propertyId":{"name":"player_number","path":"objects/obj_player_parent/obj_player_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1",},
   ],
   "parent":{
     "name":"Objects",
