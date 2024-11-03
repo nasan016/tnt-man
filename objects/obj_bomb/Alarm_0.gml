@@ -1,7 +1,7 @@
-// Alarm[0] Event: Explosion logic
+// Alarm[0] Event: boom boom
 
 var directions = [
-    [0, 0],   // Center (explosion at the bomb's origin)
+    [0, 0],   // Center
     [1, 0],   // Right
     [-1, 0],  // Left
     [0, -1],  // Up

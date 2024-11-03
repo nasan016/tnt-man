@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description init player stats
 // You can write your code in this editor
 move_speed = 5
 tile_size = 64;
